@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+	<head>
+		<style>
+			#demo{
+				font-size:20px;
+				color:black;
+				padding:5%;
+				margin:0%;
+				width: 1100px; 
+				height: 155px;
+			}
+			#demo1{
+
+				font-size:22px;
+				color:black;
+				/* color:#2FC1AC; */
+				padding:5%;
+				margin:0%;
+				width: 1100px; 
+				height: 200px;
+			}
+			#demo2{
+		
+				border:1px solid #2FC1AC;
+				box-shadow: 0 1px 2px #2FC1AC inset,0 -1px 0 #2FC1AC inset,0 -2px 3px,#2FC1AC inset;
+				background: -webkit-linear-gradient(top,#2FC1AC,#2FC1AC);
+				background: -moz-linear-gradient(top,#2FC1AC,#2FC1AC);
+				background: linear-gradient(top,#2FC1AC,#2FC1AC);
+				margin-left:46%
+				/* position: absolute;
+				left: 46.3%;
+				font-size: 22px; */
+	}
+				#demo4{
+
+			font-size:22px;
+			color:black;
+			/* color:#2FC1AC; */
+			/* padding:5%;  */
+			margin-left:0%;
+			margin-top: 3%;
+			/* margin-right:15%; */
+			width: 1100px; 
+			height: 300px;
+			/* text-align:center; */
+			}
+				
+		</style>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"/> -->
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<a class="logo pull-left" href="#">
+					<h1>C<span>Generator</span></h1>
+				</a>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				   </button>
+				</div>
+				<div class="collapse navbar-collapse " id="bs-example-navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="navBg"></li>
+						<li class="active">
+							<a href="index.html">网站首页</a>
+						</li>
+						<li>
+							<a href="about.html">关于我们</a>
+						</li>
+						<li>
+							<!-- <a href="service.html">评论生成</a> -->
+						<!-- </li> -->
+						<!-- <li>
+							<a href="news.html">新闻中心</a>
+						</li> -->
+						<!-- <li> -->
+							<a href="contact.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--space-->
+
+
+	
+	
+
+		<div class="space"></div>
+		<!--banner-->
+		<div class="banner">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<!-- <div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="../static/images/banner/1.jpg">
+					</div>
+					<div class="item">
+						<img src="../static/images/banner/2.jpg">
+					</div>
+				</div> -->
+
+
+
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<!--honor-->
+	
+	
+	
+
+
+
+		<!-- <div class="honor padT80 padB80 greyBg"> -->
+			<div class="container">
+				<section class="title">
+					<h2>请输入你想生成评论的商品网址</h2>
+					<br/>
+					<br/>
+				</section>
+						<!-- <div class="col-sm-6 col-xs-12 padT80"> -->
+							<form action="{{ url_for('index')}}" method="POST">
+								
+								<!-- <input type="text" name="comment"/> --> 
+								<input name="message" id = "demo" rows="1" cols="100" autocomplete="off">
+								<!-- <textarea name="message" id = "demo" rows="1" cols="100"></textarea> -->
+								<br/>
+								<br/>
+								
+								<input type="submit" class="btn btn-success" id = "demo2" value= "生成评论">
+								<br/>
+							</form> 		
+
+			</div>	
+
+			<div class="container">
+				<section class="title">
+					<h2>评论生成</h2>
+
+			
+			<textarea id="demo4">{{prediction}}</textarea>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<!-- <div
+				 class="honor padT80 padB80 greyBg">
+				<div class="container">
+					<section class="title">
+						<h2>评论生成</h2>
+						<br/>
+						<br/>
+					</section>
+						<div>
+							<form>
+							
+							<input type = "textarea" id = "demo1" value= {{prediction}}>
+							</form>
+						</div>
+	
+			 -->
+
+
+<!-- 
+			<div class="container">
+				<section class="title">
+					<h2>功能介绍</h2>
+				</section>
+				<div class="row padT80">
+					<div class="col-sm-4">
+						<div class="honty">
+							<div>
+								<div class="ty"><span>A</span></div>
+								<div class="tycon">
+									<h3>方案合理、质量可靠</h3>
+									<p>REASONABLE SCHEME </p>
+								</div>
+							</div>
+							<p>
+								以上百家成功案例经验，量身定制最合理的开发方案；
+								遵照全球公认的ISO质量体系，精细打磨产品每一个细
+								节； 经过我们的努力，给用户带来即舒适又美观的体
+								验，同时又能章显其商业价值~
+							</p>
+						</div>
+					</div>	
+					<div class="col-sm-4">
+						<div class="honty">
+							<div>
+								<div class="ty"><span>B</span></div>
+								<div class="tycon">
+									<h3>互相沟通、面面俱到</h3>
+									<p>REASONABLE SCHEME </p>
+								</div>
+							</div>
+							<p>
+								以上百家成功案例经验，量身定制最合理的开发方案；
+								遵照全球公认的ISO质量体系，精细打磨产品每一个细
+								节； 经过我们的努力，给用户带来即舒适又美观的体
+								验，同时又能章显其商业价值~
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="honty">
+							<div>
+								<div class="ty"><span>C</span></div>
+								<div class="tycon">
+									<h3>交付准时、服务贴心</h3>
+									<p>DELIVERY ON TIME</p>
+								</div>
+							</div>
+							<p>
+								以上百家成功案例经验，量身定制最合理的开发方案；
+								遵照全球公认的ISO质量体系，精细打磨产品每一个细
+								节； 经过我们的努力，给用户带来即舒适又美观的体
+								验，同时又能章显其商业价值~
+							</p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+			
+
+
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="index.html">网站首页</a></li>
+					<li><a href="about.html">关于我们</a></li>
+					<!-- <li><a href="service.html">评论生成</a></li> -->
+					<!-- <li><a href="news.html">新闻中心</a></li> -->
+					<li><a href="contact.html">联系我们</a></li>
+				</ul>
+			</nav>
+			<p>
+				<span class="glyphicon glyphicon-phone-alt"></span>029-12345678
+				<span class="glyphicon glyphicon-earphone"></span>86-13772500869
+				<span class="glyphicon glyphicon-envelope"></span>yunshuzhou6@123.com
+			</p>
+		</footer>
+		<script src="../static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
+
+<script type="text/javascript">
+    // 复制全文
+    document.getElementById("demo2").onmousemove=function(){
+        var ssrsss =document.getElementById("demo1").innerText.replace(/\ +/g, ""); //获取文本并去掉空格
+        var flag = copyText(ssrsss) //传递文本
+        alert(flag ? '复制成功' : '复制失败')
+        };
+
+        function copyText(text) {
+            var textarea = document.createElement("textarea"); //创建input对象
+            var currentFocus = document.activeElement; //当前获得焦点的元素
+            var toolBoxwrap = document.getElementById('NewsToolBox'); //将文本框插入到NewsToolBox这个之后
+            toolBoxwrap.appendChild(textarea); //添加元素
+            textarea.value = text;
+            textarea.focus();
+            if (textarea.setSelectionRange) {
+                textarea.setSelectionRange(0, textarea.value.length); //获取光标起始位置到结束位置
+            } else {
+                textarea.select();
+            }
+            try {
+                var flag = document.execCommand("copy"); //执行复制
+            } catch (eo) {
+                var flag = false;
+            }
+            toolBoxwrap.removeChild(textarea); //删除元素
+            currentFocus.focus();
+            return flag;
+        }
+    </script>

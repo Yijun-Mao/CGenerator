@@ -1,0 +1,12 @@
+six
+tqdm==4.30.*
+torch==1.0.1
+torchtext==0.5.0
+future
+configargparse
+PyYAML
+tensorflow
+tensorboardX
+flask
+bs4
+requests
