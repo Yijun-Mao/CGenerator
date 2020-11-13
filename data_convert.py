@@ -51,7 +51,7 @@ def category_merge(classname):
     else:
         return classname
 
-def random_split_data(data, train_rate=0.8, max_len_filter=100, min_len_filter=12, class_filter=["服务器", "数码相框", "遥控器", "显示器", "读卡器", "电子书阅读器", "扫描仪", "汽车警报", "望远镜", "航拍无人机", "桌面一体机", "镜头", "摄影灯"]):
+def random_split_data(data, train_rate=0.8, max_len_filter=100, min_len_filter=12, class_filter=["服务器", "数码相框", "读卡器", "扫描仪", "汽车警报", "望远镜", "航拍无人机", "桌面一体机", "镜头", "摄影灯"]):
     class_data = {}
     fw = open('./static.txt', "a", encoding="utf-8")
     for comment, _, classname in data:
