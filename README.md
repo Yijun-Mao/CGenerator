@@ -40,7 +40,7 @@ After filtering the raw data, put them in `./data/comments/` as `.bpe` files. Fo
 
 We try the following three methods to generate comments. Run the commands to train the models with different methods. 
 
-**Simple fusion**: `python train.py -config config/comments/transformer_comments_cond_ch.yml -run_name simple_fusion -gpt2_params_path <path to GPT2-Chinese pretrained weights>/<GPT-2 weights>.bin -simple_fusion -dropout 0.1 -accum_count 30
+**Simple fusion**: `python train.py -config config/comments/transformer_comments_cond_ch.yml -run_name simple_fusion -gpt2_params_path <path to GPT2-Chinese pretrained weights>/<GPT-2 weights>.bin -simple_fusion -dropout 0.1 -accum_count 30`
 
 **Context attention**: `python train.py -config config/comments/transformer_comments_ctxattn_ch.yml -run_name ctxattn -gpt2_params_path <path to GPT2-Chinese pretrained weights>/<GPT-2 weights>.bin -gpt2_init_embanddec`
 
@@ -57,5 +57,7 @@ To show the demo, at first run the following command.
 Then you can open `http://127.0.0.1:5500/index/html` in your local browser and the website is demonstrated.
 
 Fill in the url of the product which you want to generate comment for and click the button. In a few seconds, you would get the generated comment. 
+
 ![avatar](demo/before_generate.jpg)
+
 ![avatar](demo/generated.jpg)
