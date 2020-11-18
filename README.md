@@ -3,7 +3,7 @@ Product Comments Automatic Generation
 
 商品评论自动生成
 
-This repo is our final project of course Natural Language Processing in Xi'an Jiaotong University. The model usd in our project is based on [Encoder-Agnostic Adaptation for Conditional Language Generation](https://arxiv.org/abs/1908.06938), Zachary M. Ziegler, Luke Melas-Kyriazi, Sebastian Gehrmann and Alexander M. Rush. The code in this repo is also based on their [code](https://github.com/harvardnlp/encoder-agnostic-adaptation).
+This repo is our final project of course Natural Language Processing in Xi'an Jiaotong University. Our goal is to generate different product comments according to the given product categories. The model usd in our project is based on [Encoder-Agnostic Adaptation for Conditional Language Generation](https://arxiv.org/abs/1908.06938), Zachary M. Ziegler, Luke Melas-Kyriazi, Sebastian Gehrmann and Alexander M. Rush. The code in this repo is also based on their [code](https://github.com/harvardnlp/encoder-agnostic-adaptation).
 
 ## Table of Contents
 
@@ -11,6 +11,7 @@ This repo is our final project of course Natural Language Processing in Xi'an Ji
 - [Dependencies](#dependencies)
 - [Data](#data)
 - [GPT-2 Pretrained Weights](#GPT-2-pretrained-weights)
+- [Train](#train)
 
 ## Abstract
 
@@ -25,6 +26,9 @@ This code was tested with `Python3.6` and `Pytorch 1.0.1`. See requirements.txt 
 ## Data
 
 
+
 ## GPT-2 Pretrained Weights
 
+As our comments data are all in Chinese, we use the GPT-2 pretrained weights provided in [GPT2-Chinese](https://github.com/Morizeyao/GPT2-Chinese). 
 
+## Train
