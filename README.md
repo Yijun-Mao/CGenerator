@@ -25,7 +25,7 @@ This code was tested with `Python3.6` and `Pytorch 1.0.1`. See requirements.txt 
 
 ## Data
 
-
+We collect our comments data in JD. We provide our raw data in [百度网盘【053t】](https://pan.baidu.com/s/1ty3TZOAZ-uAZJ4Z23Fj9lA). There are two files that one contains about 500,000 comments and one contains about 30,000 comments. In our project only the comments and the categories are required. Thus, you may need filter the raw data before training and reserve the comments in chosen categories.
 
 ## GPT-2 Pretrained Weights
 
