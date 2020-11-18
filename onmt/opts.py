@@ -646,7 +646,7 @@ def translate_opts(parser):
     """ Translation / inference options """
     group = parser.add_argument_group('Model')
     group.add('--model', '-model', dest='models', metavar='MODEL',
-              nargs='+', type=str, default=["output/comments_COMMENTS_BPETGT/transformer_comments_psa_ch_psa_200_18/checkpoints/model_step_10000.pt"], #required=True,
+              nargs='+', type=str, required=True,
               help="Path to model .pt file(s). "
                    "Multiple models can be specified, "
                    "for ensemble decoding.")
